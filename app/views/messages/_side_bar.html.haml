@@ -1,0 +1,30 @@
+.chat-side
+  .side-header
+    .side-header_box
+      %p.side-header_box__user-name 田中
+      %ul.side-header_box__menu
+        %li.side-header_box__menu__edit-user
+        = link_to "#", class: "edit__icon" do
+          = icon('fas','edit')
+        %li.side-header_box__menu__new-group
+        = link_to "#", class: "cog__icon"  do
+          = icon('fas','cog')
+  .side-groups
+    .group
+      %p.side__group-name 
+        techcamp
+      %p.side__latest-message 
+        まだメッセージはありません
+    .group
+      %p.side__group-name 
+        techcamp
+      %p.side__latest-message 
+        まだメッセージはありません
+    .group
+      %p.side__group-name 
+        techcamp
+      %p.side__latest-message 
+        まだメッセージはありません
+
+
+
