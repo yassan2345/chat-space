@@ -40,12 +40,18 @@
     .group {
       margin-bottom: 40px;
       .side__group-name {
-         font-size: 15px;
+        font-size: 15px;
         margin-bottom: 5px;
+        color: white;
       }
       .side__latest-message {
         font-size: 11px;
+        color: white;
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
