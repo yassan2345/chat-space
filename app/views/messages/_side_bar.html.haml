@@ -13,11 +13,11 @@
   .side-groups
     - current_user.groups.each do |group|
       .group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side__group-name
             = group.name
           .side__latest-message
-            メッセージはまだありません。
+            = group.show_last_message
     -# .group
     -#   %p.side__group-name 
     -#     techcamp

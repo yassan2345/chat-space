@@ -1,42 +1,4 @@
 .wrapper
 
   = render "side_bar"
-
-
-.chat-main
-  .main-header
-    .main-header__left-box
-      %h2.main-header__left-box__curent-group test
-      %ul.main-header__left-box__member-list Member : 田中
-    .main-header__edit-btn 
-      = link_to "#", class: "EDITlink" do
-        Edit
-
-  .main-messages
-    .message
-      .upper-message
-        %p.message__upper-info__talker
-          田中
-        %p.message__upper-info__date
-          2020/04/15(Wed)21:41:00
-      %p.message__text
-        まだメッセージはありません
-    .message
-      .upper-message
-        %p.message__upper-info__talker
-          田中
-        %p.message__upper-info__date
-          2020/04/15(Wed)21:41:00
-      %p.message__text
-        まだメッセージはありません
-
-  .main-form
-    %form.new_messeage
-      .input-box
-        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-        %label{class: "input-box__image"}
-          = icon('fas','image')
-          %input{type: "file", class: "input-box__image__file"}
-      %input.submit-btn(type="submit" value="Send")/
-
-
+  = render "main_chat"

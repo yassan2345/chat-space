@@ -8,14 +8,16 @@
     display: flex;
     justify-content: space-between;
     &__left-box {
+      margin-top: 35px;
       &__curent-group {
-        padding: 35px 0 15px;
+        // padding: 35px 0 15px;
         font-size: 20px;
         color: #333333;
       }
       &__member-list {
         font-size: 12px;
         color: #999999;
+        display: flex;
       }
     }
     &__edit-btn {
@@ -32,33 +34,37 @@
         color: #38aef0;
       }
     }
-
   }
 
   .main-messages {
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 46px 40px ;
+    overflow: scroll;
     .message {
       margin-bottom: 46px;
       font-weight: normal;
       .upper-message {
         display: flex;
-        .message__upper-info__talker {
+        .upper-message__user-name{
           font-size: 16px;
           color: #333333;
           font-weight: bold;
         }
-        .message__upper-info__date {
+        .upper-message__date {
           font-size: 12px;
           color: #999999;
           margin-left: 10px;
         }
       }
-      .message__text {
+      .lower-message__content{
         font-size: 14px;
         color: #434A54;
         margin:10px 0 0 0;
+      }
+      .lower-message__image {
+        width: 200px;
+        height: 150px;
       }
     }
   }
@@ -71,11 +77,10 @@
 
     form {
       display: flex;
+      position: relative;
       .input-box {
         display: flex;
         width: 100%;
-        position: relative;
-
         &__text {
           height: 50px;
           width: 100%;
@@ -88,7 +93,7 @@
           font-size: 1.3rem;
           position: absolute;
           top: 10px;
-          right: 10px;
+          right: 130px;
 
           &__file {
             display: none;
