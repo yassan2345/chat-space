@@ -14,31 +14,6 @@
 
   .main-messages
     = render @messages
-    -# .message
-    -#   .upper-message
-    -#     %p.message__upper-info__talker
-    -#       田中
-    -#     %p.message__upper-info__date
-    -#       2020/04/15(Wed)21:41:00
-    -#   %p.message__text
-    -#     まだメッセージはありません
-    -# .message
-    -#   .upper-message
-    -#     %p.message__upper-info__talker
-    -#       田中
-    -#     %p.message__upper-info__date
-    -#       2020/04/15(Wed)21:41:00
-    -#   %p.message__text
-    -#     まだメッセージはありません
-
-  -# .main-form
-  -#   %form.new_messeage
-  -#     .input-box
-  -#       %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-  -#       %label{class: "input-box__image"}
-  -#         = icon('fas','image')
-  -#         %input{type: "file", class: "input-box__image__file"}
-  -#     %input.submit-btn(type="submit" value="Send")/
       
   .main-form
     .input-box
