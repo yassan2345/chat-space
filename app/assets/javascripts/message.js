@@ -54,7 +54,6 @@ $(function(){
   .done(function(data){
     var html = buildHTML(data);
     $('.main-messages').append(html);
-    $('.input-box__text').val('');
     $('.submit-btn').prop('disabled', false);
     $('.main-messages').animate({ scrollTop:$('.main-messages')[0].scrollHeight});
     $('form')[0].reset();
